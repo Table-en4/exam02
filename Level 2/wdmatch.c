@@ -11,10 +11,15 @@ int	main(int ac, char **av)
 	k = 0;
 	if (ac == 3)
 	{
+		//on incremente dans la premiere string
 		while (av[1][i])
 		{
+			//on incremente dans la deuxieme string
 			while (av[2][j])
 			{
+				//si i est egale a j dans la deuxieme string
+				//on incremente k et on break pour revenir 
+				//a la boucle juste au dessus
 				if (av[1][i] == av[2][j])
 				{
 					k++;
@@ -24,6 +29,9 @@ int	main(int ac, char **av)
 			}
 			i++;
 		}
+		//si k est egal a i alors la string est complete
+		//et on peut l'afficher dans ce cas
+		//si elle n'est pas complete alors on return \n
 		if (k == i)
 		{
 			i = 0;

@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+//putnbr simplifié pour fizz_buzz
 void	ft_putnbr(int i)
 {
 	if (i > 9)
