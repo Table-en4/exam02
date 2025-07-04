@@ -25,7 +25,7 @@ void	capitalizer(char *str)
 			str[i] += 32;
 		//on convertie la dernierre lettre du mot en majuscule en utilisant 
 		//is space qui va verifier si le dernier mot est un espace, \n, \0 ou un tab
-		else if ((str[i] >= 'a' && str[i] <= 'z') && is_space(str[i + 1]))
+		if ((str[i] >= 'a' && str[i] <= 'z') && is_space(str[i + 1]))
 			str[i] -= 32;
 		//on affcihe lettre par lettre
 		ft_putchar(str[i++]);
