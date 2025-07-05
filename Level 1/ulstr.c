@@ -9,8 +9,8 @@ int	main(int ac, char **av)
 	{
 		while (av[1][i])
 		{
-			//si on rencontre une minuscule on l'a convertie en majuscule
-			//avec la table ascii en decrementant de 32
+			//si on rencontre une minuscule on la convertie en majuscule
+			//en decrementant de 32 dans la table ascii
 			if (av[1][i] >= 'a' && av[1][i] <= 'z')
 				av[1][i] -= 32;
 			//on fait la meme chose si on croise une majuscule

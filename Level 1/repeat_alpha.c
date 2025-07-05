@@ -12,6 +12,7 @@ int	main(int ac, char **av)
 		//parcourir ma string
 		while (av[1][i])
 		{
+			//on enregistre la valeur de av[1][i] dans c
 			c = av[1][i];
 			//verifier si ma string est composé d'alphabet
 			if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))

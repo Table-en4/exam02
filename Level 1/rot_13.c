@@ -11,7 +11,7 @@ int	main(int ac, char **av)
 		while (av[1][i])
 		{
 			//si on croise un element compris entre a et m minuscule ou majuscule
-			//on incrémente i 0 13 dans la table ascii
+			//on incrémente i de 13 dans la table ascii
 			if ((av[1][i] >= 'a' && av[1][i] <= 'm') || (av[1][i] >= 'A' && av[1][i] <= 'M'))
 				av[1][i] += 13;
 			//sinon si on croise un element compris entre m et z min ou maj
