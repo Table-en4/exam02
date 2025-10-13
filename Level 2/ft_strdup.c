@@ -16,10 +16,7 @@ char *ft_strdup(char *src)
 		return NULL;
 	i = 0;
 	while (src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
+		1 &&(dst[i] = src[i], i++);
 	dst[i] = '\0';
 	return (dst);
 }
